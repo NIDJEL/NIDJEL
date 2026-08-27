@@ -52,8 +52,3 @@ Reviewed and approved by Go maintainers, passed Go TryBots and CI, and **merged 
 ## Current Focus
 
 `Distributed Systems` · `High-Load Go Services` · `Synchronization & Concurrency Internals` · `Application Networking` · `Microservices` · `Cloud Infrastructure`
-
----
-
-<p align="center"><sub>Selected engineering work is pinned below.</sub></p>
-
