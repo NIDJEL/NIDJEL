@@ -43,14 +43,47 @@ Reviewed and approved by Go maintainers, passed Go TryBots and CI, and **merged 
 
 ---
 
+## Verified AWS Microcredential
+
+<div align="center">
+
+<a href="https://www.credly.com/badges/ed05c89f-b6ac-4e72-a2d5-eed862dd695a/public_url">
+  <img
+    src="assets/aws-application-networking-demonstrated.png"
+    width="180"
+    alt="AWS Application Networking Demonstrated"
+  />
+</a>
+
+### AWS Application Networking Demonstrated
+
+**Amazon Web Services Training and Certification · Microcredential · Aug 2026**
+
+Hands-on AWS assessment covering application networking, service-to-service communication, load balancing, container networking, observability, and cloud infrastructure.
+
+<p>
+  <img alt="AWS" src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&amp;logo=amazonwebservices&amp;logoColor=FF9900">
+  <img alt="VPC Lattice" src="https://img.shields.io/badge/VPC_Lattice-8A2BE2?style=flat-square">
+  <img alt="Amazon ECS" src="https://img.shields.io/badge/Amazon_ECS-FF9900?style=flat-square&amp;logo=amazonecs&amp;logoColor=white">
+  <img alt="CloudFront" src="https://img.shields.io/badge/CloudFront-8A2BE2?style=flat-square&amp;logo=amazonwebservices&amp;logoColor=white">
+  <img alt="API Gateway" src="https://img.shields.io/badge/API_Gateway-FF4F8B?style=flat-square&amp;logo=amazonapigateway&amp;logoColor=white">
+  <img alt="CloudWatch" src="https://img.shields.io/badge/CloudWatch-FF4F8B?style=flat-square&amp;logo=amazoncloudwatch&amp;logoColor=white">
+</p>
+
+**[Verify credential on Credly](https://www.credly.com/badges/ed05c89f-b6ac-4e72-a2d5-eed862dd695a/public_url)**
+
+</div>
+
+---
+
 ## Engineering Focus
 
 `Concurrent Programming` · `Distributed Systems` · `Backend Architecture` · `Microservices` · `Networking` · `Databases` · `Performance Engineering` · `Reliability` · `High-Load Systems`
 
 ## Credentials
 
-- **IBM Developer Skills Network** — Docker Essentials: A Developer Introduction *(completed)*
-- **AWS cloud and application networking training** — *in progress*
+- **AWS Application Networking Demonstrated** — AWS Microcredential · **Verified on Credly**
+- **IBM Developer Skills Network** — Docker Essentials: A Developer Introduction
 
 ## Current Focus
 
