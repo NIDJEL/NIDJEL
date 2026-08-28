@@ -43,7 +43,7 @@ Reviewed and approved by Go maintainers, passed Go TryBots and CI, and **merged 
 
 ---
 
-## Verified AWS Microcredential
+## Verified AWS
 
 <div align="center">
 
@@ -57,7 +57,7 @@ Reviewed and approved by Go maintainers, passed Go TryBots and CI, and **merged 
 
 ### AWS Application Networking Demonstrated
 
-**Amazon Web Services Training and Certification · Microcredential · Aug 2026**
+**Amazon Web Services Training and Certification Aug 2026**
 
 Hands-on AWS assessment covering application networking, service-to-service communication, load balancing, container networking, observability, and cloud infrastructure.
 
