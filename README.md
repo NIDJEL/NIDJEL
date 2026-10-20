@@ -20,7 +20,7 @@ I build backend and infrastructure software with Go, focusing on concurrency, ne
   <a href="https://github.com/"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white"></a>
 </p>
 
-[**Go Gerrit — all contributions**](https://go-review.googlesource.com/q/owner:nikkruglov16@gmail.com) · [**My repositories**](https://github.com/NIDJEL?tab=repositories)
+[**Merged Go contributions**](https://go-review.googlesource.com/q/owner:nikkruglov16@gmail.com+status:merged) · [**My repositories**](https://github.com/NIDJEL?tab=repositories)
 
 </div>
 
@@ -28,47 +28,64 @@ I build backend and infrastructure software with Go, focusing on concurrency, ne
 
 ## Open Source · Go Project Contributor
 
-I contribute to the **official Go project**, including the standard library, HTTP/2 networking, compiler optimizations, developer tooling, and Go infrastructure.
+<div align="center">
 
-**12 change lists submitted** across the Go ecosystem in the linked review history, including **3 verified upstream merges**. All changes are publicly traceable through [Go Gerrit](https://go-review.googlesource.com/q/owner:nikkruglov16@gmail.com).
+<a href="https://go.dev/"><img alt="Go Project" src="https://img.shields.io/badge/Go_Project-Contributor-00ADD8?style=for-the-badge&amp;logo=go&amp;logoColor=white"></a>
+<img alt="3 upstream merges" src="https://img.shields.io/badge/3-Merged_Upstream-238636?style=for-the-badge&amp;logo=git&amp;logoColor=white">
+<img alt="Maintainer reviewed" src="https://img.shields.io/badge/Maintainer-Reviewed-30363D?style=for-the-badge&amp;logo=github&amp;logoColor=white">
 
-### Merged upstream
+<br>
 
-**1. `database/sql` — concurrency and deadlock prevention**
+**Accepted contributions to the official Go repositories.**  
+Concurrency correctness, HTTP/2 networking, and Go build infrastructure.
 
-[**CL 820060 — fix closingMutex writer coordination**](https://go-review.googlesource.com/c/go/+/820060) · [Go issue #81043](https://github.com/golang/go/issues/81043) · **Merged**
+</div>
 
-Fixed a lost-wakeup race in `closingMutex` writer coordination. A stale atomic state could leave a writer blocked indefinitely, affecting concurrent operations such as `Rows.Next` and `Rows.Close`. Added a regression test and corrected the synchronization logic.
+<br>
 
-**2. `net/http` — HTTP/2 TLS connection state**
+### 01 · `database/sql` — Concurrency & Deadlock Prevention
 
-[**CL 829184 — populate Request.TLS from HTTP/2 connection state**](https://go-review.googlesource.com/c/go/+/829184) · [Go issue #81384](https://github.com/golang/go/issues/81384) · **Merged**
+<p>
+  <img alt="Go Standard Library" src="https://img.shields.io/badge/Go-Standard_Library-00ADD8?style=flat-square&amp;logo=go&amp;logoColor=white">
+  <img alt="Concurrency" src="https://img.shields.io/badge/Concurrency-Synchronization-6E40C9?style=flat-square">
+  <img alt="Merged" src="https://img.shields.io/badge/Status-Merged_Upstream-238636?style=flat-square&amp;logo=git&amp;logoColor=white">
+</p>
 
-Corrected HTTP/2 server behavior so `Request.TLS` reflects the underlying TLS connection, including CONNECT requests and HTTP targets reached over TLS. Added test coverage for TLS and cleartext HTTP/2 connections.
+Fixed a **lost-wakeup race** in `closingMutex` writer coordination that could deadlock concurrent `Rows.Next` and `Rows.Close` operations. The fix corrects mutex state handling and adds regression coverage.
 
-**3. `x/build/internal/gcsfs` — GCS filesystem correctness**
+[**CL 820060 — View merged change ↗**](https://go-review.googlesource.com/c/go/+/820060) · [Go issue #81043](https://github.com/golang/go/issues/81043)
 
-[**CL 828164 — handle explicit GCS folders**](https://go-review.googlesource.com/c/build/+/828164) · [Go issue #81359](https://github.com/golang/go/issues/81359) · **Merged**
+---
 
-Fixed directory listing behavior for explicit GCS folders represented by zero-byte marker objects. Prevented phantom child entries while preserving detection of empty directories.
+### 02 · `net/http` — HTTP/2 TLS State
 
-### Additional submitted changes
+<p>
+  <img alt="Go Standard Library" src="https://img.shields.io/badge/Go-Standard_Library-00ADD8?style=flat-square&amp;logo=go&amp;logoColor=white">
+  <img alt="HTTP/2" src="https://img.shields.io/badge/Networking-HTTP%2F2-0969DA?style=flat-square">
+  <img alt="Merged" src="https://img.shields.io/badge/Status-Merged_Upstream-238636?style=flat-square&amp;logo=git&amp;logoColor=white">
+</p>
 
-These CLs cover compiler optimization, Go tooling, networking, JSON, and testing. **Their live review/merge status is available in Gerrit**; they are not represented here as merged.
+Corrected the HTTP/2 server so `Request.TLS` accurately reflects the **underlying TLS connection**, including CONNECT requests and HTTP targets over TLS, with corresponding test coverage.
 
-| Area | Change list |
-| --- | --- |
-| Compiler / ARM64 | [CL 827904 — fold broadcasts of inserted scalars](https://go-review.googlesource.com/c/go/+/827904) |
-| Go command | [CL 831944 — avoid panic for invalid file lists with atomic coverage](https://go-review.googlesource.com/c/go/+/831944) |
-| Go analysis | [CL 826944 — suggest rand.N for durations](https://go-review.googlesource.com/c/tools/+/826944) |
-| gopls | [CL 826984 — skip autogenerated compiler details](https://go-review.googlesource.com/c/tools/+/826984) |
-| HTTP | [CL 829664 — avoid duplicate body completion after early Close](https://go-review.googlesource.com/c/go/+/829664) |
-| JSON | [CL 820080 — preserve EOF after Decoder.More with jsonv2](https://go-review.googlesource.com/c/go/+/820080) |
-| Reverse proxy | [CL 823705 — honor ContentLength changes in ModifyResponse](https://go-review.googlesource.com/c/go/+/823705) |
-| JSON v2 | [CL 820700 — allow fallbacks to use Go embedding](https://go-review.googlesource.com/c/go/+/820700) |
-| Testing | [CL 819980 — distinguish unmatched subtests from no tests](https://go-review.googlesource.com/c/go/+/819980) |
+[**CL 829184 — View merged change ↗**](https://go-review.googlesource.com/c/go/+/829184) · [Go issue #81384](https://github.com/golang/go/issues/81384)
 
-[**Explore all my Go code reviews →**](https://go-review.googlesource.com/q/owner:nikkruglov16@gmail.com)
+---
+
+### 03 · `x/build/internal/gcsfs` — Go Infrastructure
+
+<p>
+  <img alt="Go Infrastructure" src="https://img.shields.io/badge/Go-Infrastructure-00ADD8?style=flat-square&amp;logo=go&amp;logoColor=white">
+  <img alt="Google Cloud Storage" src="https://img.shields.io/badge/Google_Cloud-Storage-4285F4?style=flat-square&amp;logo=googlecloud&amp;logoColor=white">
+  <img alt="Merged" src="https://img.shields.io/badge/Status-Merged_Upstream-238636?style=flat-square&amp;logo=git&amp;logoColor=white">
+</p>
+
+Fixed directory listing for **explicit Google Cloud Storage folders** represented by zero-byte marker objects, preventing phantom child entries while preserving empty-directory detection.
+
+[**CL 828164 — View merged change ↗**](https://go-review.googlesource.com/c/build/+/828164) · [Go issue #81359](https://github.com/golang/go/issues/81359)
+
+<div align="center">
+  <a href="https://go-review.googlesource.com/q/owner:nikkruglov16@gmail.com+status:merged"><img alt="Verified merged Go contributions" src="https://img.shields.io/badge/View_Merged_Go_Contributions-Gerrit-0B1117?style=for-the-badge&amp;logo=go&amp;logoColor=00ADD8"></a>
+</div>
 
 ---
 
